@@ -5,10 +5,47 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    h1 {
+      color: pink;
+    }
+
+    aside {
+      float: left;
+      border: 1px solid green;
+      width: 20%;
+      padding: 20px;
+    }
+
+    #main {
+      border: 1px solid red;
+      float: left;
+      width: 80%;
+    }
+
+    p {
+    }
+
+    a.hot-link {
+    }
+  </style>
 </head>
 <body>
 
-<%= yield %>
+<ul class="nav">
+  <li><a href="#">Sign In</a></li>
+</ul>
 
+<aside class="news-sidebar">
+  <p>There is awesome stuff happening here!</p>
+
+  <a class="hot-link" href="#">Go to Awesomez</a>
+</aside>
+<section id="main">
+  <%= yield %>
+</section>
 </body>
 </html>
