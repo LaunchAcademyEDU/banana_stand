@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: pink;
+}
+
+aside {
+  float: left;
+  border: 1px solid green;
+  width: 20%;
+  padding: 20px;
+}
+
+#main {
+  border: 1px solid red;
+  float: left;
+  width: 80%;
+}
+
+p {
+}
+
+a.hot-link {
+}
