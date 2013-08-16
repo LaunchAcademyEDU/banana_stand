@@ -1,3 +1,6 @@
+$green: green;
+$border-width: 1px;
+
 * {
   box-sizing: border-box;
 }
@@ -8,18 +11,21 @@ h1 {
 
 aside {
   float: left;
-  border: 1px solid green;
+  border: $border-width solid green;
   width: 20%;
   padding: 20px;
 }
 
 #main {
   border: 1px solid red;
+  @include linear-gradient(#1e5799, #2989d8);
   float: left;
   width: 80%;
-}
 
-p {
+  p {
+
+    font-weight: bold;
+  }
 }
 
 a.hot-link {
