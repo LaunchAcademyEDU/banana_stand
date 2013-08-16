@@ -28,5 +28,7 @@ aside {
   }
 }
 
-a.hot-link {
+a.hot-link:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
