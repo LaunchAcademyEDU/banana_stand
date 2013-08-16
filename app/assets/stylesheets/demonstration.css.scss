@@ -2,7 +2,7 @@ $green: green;
 $border-width: 1px;
 
 * {
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 h1 {
